@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f = "http://java.sun.com/jsf/core"    
+      xmlns:h = "http://java.sun.com/jsf/html">
+   
+     
+   <h:head>
+      <title>JSF Tutorial!</title>
+     
+   </h:head>
+   
+   <h:body>
+   <f:view>
+      <h2>JDBC Integration Example</h2>
+      
+      <h:dataTable value = "#{clientBean.clients}" var = "c" border="2">
+         
+         
+         <h:column ><f:facet name = "header">CODE</f:facet>
+           <h:outputText value="#{c.password}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">Nom</f:facet>
+           <h:outputText value="#{c.userName}"/>
+
+         </h:column>
+     
+         <h:column><f:facet name = "header">Prenom</f:facet>
+            <h:outputText value="#{c.prenom}"/>
+
+         </h:column>
+         
+         <h:column><f:facet name = "header">CarteFidelite</f:facet>
+           <h:outputText value="#{c.cartefidelite}"/>
+
+         </h:column>
+         
+         <h:column><f:facet name = "header">DateInscription</f:facet>
+                <h:outputText value="#{c.dateinscription}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">Adresse</f:facet>
+               <h:outputText value="#{c.adresse}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">CodePostal</f:facet>
+               <h:outputText value="#{c.codepostal}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">Ville</f:facet>
+                <h:outputText value="#{c.ville}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">Tel Fixe</f:facet>
+              <h:outputText value="#{c.telfixe}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">Mobile</f:facet>
+               <h:outputText value="#{c.mobile}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">Email</f:facet>
+                <h:outputText value="#{c.email}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">Remarque</f:facet>
+               <h:outputText value="#{c.remarque}"/>
+         </h:column>
+     
+      </h:dataTable>
+      </f:view>
+   </h:body>
+
+
+</html>
