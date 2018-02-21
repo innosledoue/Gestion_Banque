@@ -9,18 +9,18 @@ package jsfprojetvrai.classes;
 
 public class Client {
 
-	 private String userName;
-	    private String password; 
-	    private String prenom;
-	    private Integer cartefidelite;
-	    private String dateinscription;
-	    private String adresse;
-	    private String codepostal;
-	    private String ville;
-	    private String telfixe;
-	    private String mobile;
-	    private String email;
-	    private String remarque;
+	 private String userName;             
+	 private String password; 
+	 private String prenom;
+	 private Integer cartefidelite;
+	 private String dateinscription;
+	 private String adresse;
+	 private String codepostal;
+	 private String ville;
+	 private String telfixe;
+	 private String mobile;
+	 private String email;
+	 private String remarque;
 		         
 	    
 	    public  Client() {};    //    LE CONSTRUCTEUR

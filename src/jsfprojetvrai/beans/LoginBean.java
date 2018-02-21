@@ -103,7 +103,7 @@ public class LoginBean {
  
             if(password.equals(dbpassword))
                  //return "personne";          ---------POUR LA CONNEXION CLIENT
-            	   return "clients";
+            	   return "menuadministrateur";
             else
             {
                 return "failure";

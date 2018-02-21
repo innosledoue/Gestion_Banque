@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+
+<h:head>
+	<title>SupprimerClient</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		
+		<table>
+		
+<tr>
+<td>Le Password: </td>
+<td><h:outputText  value="#{suppClientBean.dbpassword}" /></td>
+</tr>		
+		
+<tr>
+<td>Le Nom</td>
+<td><h:outputText value="#{suppClientBean.dbuserName}" /></td>
+</tr>
+
+<tr>
+<td>Le Prenom</td>
+<td><h:outputText value="#{suppClientBean.dbprenom}" /></td>
+</tr>
+
+<tr>
+<td>L'indice de carte de fidelite </td>
+<td><h:outputText  value="#{suppClientBean.dbcartefidelite}" /></td>
+</tr>
+
+<tr>
+<td>La date d'inscription </td>
+<td><h:outputText  value="#{suppClientBean.dbdateinscription}" /></td>
+</tr>
+
+<tr>
+<td>L'adresse</td>
+<td><h:outputText value="#{suppClientBean.dbadresse}" /></td>
+</tr>
+
+<tr>
+<td>Le code postal</td>
+<td><h:outputText value="#{suppClientBean.dbcodepostal}" /></td>
+</tr>
+
+<tr>
+<td>La ville</td>
+<td><h:outputText id="ville" value="#{suppClientBean.dbville}" /></td>
+</tr>
+
+<tr>
+<td>Le telephone fixe</td>
+<td><h:outputText  value="#{suppClientBean.dbtelfixe}" /></td>
+</tr>
+
+<tr>
+<td>Le numero mobile</td>
+<td><h:outputText value="#{suppClientBean.dbmobile}" /></td>
+</tr>
+
+<tr>
+<td>L'email</td>
+<td><h:outputText value="#{suppClientBean.dbemail}" /></td>
+</tr>
+
+<tr>
+<td>La remarque</td>
+<td><h:outputText value="#{suppClientBean.dbremarque}" />
+</td>
+</tr>
+
+
+<tr>
+<td> </td>
+<td><h:commandButton value="Supprimer" 
+action="#{suppClientBean.suppclientFinal}"/>
+</td>
+</tr>
+</table>
+	</h:form>
+</h:body>
+
+</f:view>
+     
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+      
+      <f:view>
+<html>
+<head><title> Login Admin</title>
+
+	 <style>
+	 
+	       body {
+	
+	             background: #FFFFFF url(image/back_all.gif);
+	             font: 13px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	             color: #333333;
+                 }
+	 
+	       #header {
+	              height: 348px;
+	              width: 769px;
+                    } 
+    
+                  #menu
+                      {
+                       width: 669px;
+                       height: 71px;
+                       padding-left: 100px;
+                       background: url(image/menu.gif) repeat-x;
+                        }
+                   #logo {
+                         width: 749px;
+                          height: 257px;
+                         text-align:  left;
+                          padding-left: 20px;
+                           padding-top: 20px;
+                           background: url(image/header.jpg) no-repeat;	
+                           }
+                       #content
+                          {
+	                       margin: 0 auto;
+	                       width: 769px;
+	                       border: 15px solid #ffffff;
+                           }
+                        #menu li {
+	                                
+	                               display: inline; 
+	
+                                  }
+                         #menu ul {
+	                             list-style: none;	
+                                  }
+                                  #menu a {
+	                                        float: left;
+	                                        width: 200px;
+	                                         height: 45px;
+                                             display: block;
+	                                         text-align: center;
+	                                         text-decoration: none;
+	                                         color: #ffffff;
+	                                         font-weight: bold;
+	                                         font-size: 16px;
+	                                         text-transform: uppercase;
+	                                         padding-top: 26px;
+	                                         padding-right:70px;
+                                            }
+                                            #menu a:hover {
+	                                                       width: 100px;
+                                                           height: 45px;
+	                                                       color: #DAFAC9;
+	                                                       text-decoration: underline;
+	                                                       background: url(image/menu_r.gif) repeat-x;
+                                                            }
+                                          #main
+                                              {
+                                                 background: #ffffff url(image/table_back.gif) repeat-x top
+                                              }
+ #right
+{
+float: right;
+width: 520px;
+padding-top: 10px;
+padding-right: 10px;
+}
+ #right H4
+{
+	margin: 0;
+	padding: 0px;
+	font-size: 12px;
+	color: #65A204;
+}
+  #right a
+{
+color: #65A204;
+text-decoration: none;
+}
+#right h2 {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	color: #65A204;
+} 
+#right p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+     }
+     
+  #right .box
+{
+border: 1px solid #C9C9C9;
+background: #ffffff;
+padding: 10px;
+margin-bottom: 10px;
+}  
+ 
+
+#left a {
+	color: blue;
+     }  
+#left H3
+{
+width: 190px;
+height: 24px;
+font-size: 14px;
+font-weight: bold;
+padding-left: 22px;
+padding-top: 15px;
+text-transform: uppercase;
+color: #ffffff;
+background: url(image/title.png) no-repeat
+}
+
+
+#left ul {
+	list-style: none;
+          }
+
+#left li {
+	border: 0px;
+	margin-left: 0px;
+}
+#left
+{
+	padding-left: 250px;
+	padding-top: 10px;
+	width: 212px;
+}
+
+
+.left_back
+{
+background: url(image/back.png) repeat-y;
+padding-top: 01px;
+}
+
+                                   
+	</style>
+  
+
+</head>
+
+
+
+ <h:body>
+ 
+<h:form>
+<div id="content">
+	 <div id="header">
+	 
+	   <div id="logo">
+	     <h1>atawan designe</h1>
+	    
+	    </div>
+
+	   <div id="menu">
+	     
+		<ul>
+			<h:commandButton id="cBtn9" value="Administrateur" action="adminLogin" />
+			
+			
+			<h:commandButton id="cBtn" value="Services client" action="adminLogin" />
+		</ul>
+	</div>
+	     
+    </div>
+        <div id="main">
+	<div id="right">
+			<h2>Welcome To Our Website</h2><br />
+            <h4><a href="galatawan@gmail.com">TalaJoelAtawan Disegne</a></h4><br />
+            <p>This website template is released under  a Creative Commons Attribution 2.5 License</p>
+			    <p>We request you retain the full copyright notice below including the link to www.metamorphozis.com.<br />
+			      This not only gives respect to the large amount of time given freely by the developers 
+			      but also helps build interest, traffic and use of our free and paid designs. If you cannot (for good 
+			      reason) retain the full copyright we request you at least leave in place the 
+			      Website Templates line, with Website Templates  linked to www.metamorphozis.com. If you refuse 
+			      to include even this then support may be affected.<br /></p>
+                
+         </div>   
+           </div> 
+   </div>
+   <div id="left">	
+		<h3>Membres du groupe</h3>
+		<div class="left_back">
+			<ul>
+				<li><ul>
+					<li><a href="galatawan@gmail.com">-Diomande Atawan</a></li>
+					<li><a href="#">-Joel kouadio</a></li>
+					<li><a href="#">-Tala blaise</a></li>
+					<li><a href="#">-N'goran Innocent</a></li>
+					</ul>
+			  </li>
+			</ul>
+			</div>
+   </div>
+  
+   
+		
+
+</h:form>
+
+ </h:body>
+ 
+ 
+ 
+ 
+</html>
+</f:view>
+
+</html>

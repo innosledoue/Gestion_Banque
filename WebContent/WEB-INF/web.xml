@@ -4,7 +4,7 @@
 
 <display-name>jsfprojetvrai</display-name>
 	<welcome-file-list>
-
+        <welcome-file>articles.xhtml</welcome-file>
 		<welcome-file>adminlogin.xhtml</welcome-file>
 	</welcome-file-list>
 	<servlet>
