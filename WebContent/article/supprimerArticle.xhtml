@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+
+<h:head>
+	<title>SupprimerClient</title>
+	 <style>	
+     * {
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	color: #0041A3;
+}
+
+a:hover, {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:visited {
+	color: #0041A3;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF url(image/bad.gif) repeat-x;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+#main
+{
+background: url(image/headad.jpg) no-repeat;
+width: 982px;
+height: 284px;
+}
+
+#header {
+	width: 778px;
+	height: 284px;
+}
+
+#logo {
+	padding-left: 200px;
+	width: 578px;
+	padding-top: 100px;
+	height: 100px;
+}
+
+#logo h1 {
+	font-size: 28px;
+	font-weight: normal;
+}
+
+#logo h1 a {
+	color: #ffffff;
+}
+
+#logo h2 {
+	margin-top: 5px;
+    font-size: 14px;
+	font-weight: normal;
+}
+
+#logo h2 a {
+	color: #ffffff;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+#metamorph { 
+    font-size: 14px;
+	color: #ffffff;
+}
+#menu {
+	padding-left: 220px;
+	padding-top: 38px;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 90px;
+	height: 30px;
+	margin-left: 1px;
+	padding-top: 15px;
+	background: url(image/button.png) no-repeat;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#menu a:hover {
+	height: 34px;
+	margin-top: -3px;
+}
+
+#content
+{
+width: 838px;
+padding: 10px
+}
+
+#left
+{
+	float: left;
+	width: 200px;
+	padding-right: 1em;
+}
+
+
+
+#right
+{
+float: right;
+width: 600px;
+}
+
+#right H4
+{
+	font-size: 12px;
+	color: #0041A3;
+
+}
+
+#right H1
+{
+	font-size: 28px;
+	color: #0041A3;
+	padding-bottom: 10px
+}
+
+#right a
+{
+color: #0041A3;
+text-decoration: none;
+}
+
+#right p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#right h2 {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	color: #0041A3;
+}
+.date {
+	text-align: right;
+	color: #0041A3;
+	font-size: 11px;
+	background-color: #fff;
+}
+
+.date a {
+	color: #0041A3;
+	background-color: #fff;
+}
+
+#right .pic
+{
+float: left;
+margin: 5px;
+}
+
+#right .pic1
+{
+float: right;
+margin: 5px;
+}
+
+#metamorph1 {
+	clear: both;
+	height: 36px;
+	padding: 15px 0;
+	background: #000000 url(image/footer.jpg) no-repeat;
+	border-top: 5px solid #5592C6;
+	text-align: center;
+}
+
+#metamorph1 p {
+	margin: 0;
+	color: #ffffff;
+	font-size: 10px;
+}
+
+#metamorph1 a {
+	color: #ffffff;
+	font-size: 10px;
+}
+
+#metamorph1 a:hover {
+	color: #FF0000;
+}
+.small p {
+	margin: 0;
+	font-size: 11px;
+}
+.boxed {
+	margin-bottom: 20px;
+}
+
+.boxed .title {
+	height: 33px;
+	width: 207px;
+	padding: 13px 0 0 20px;
+	background: url(image/title.gif) no-repeat;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.boxed .content2 {
+	padding: 10px;
+}
+
+#login {
+}
+
+#login form {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login label {
+	font-size: x-small;
+	font-weight: bold;
+}
+
+#login input {
+	margin-bottom: 5px;
+}
+
+#text1, #text2 {
+	width: 150px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
+
+     
+     
+   </style>
+  
+</h:head>
+
+<h:body>
+	<h:form>
+		<div id="main">
+<!-- header begins -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#">Metamorph_strict</a></h1>
+		<h2><a href="http://www.metamorphozis.com/" id="metamorph">Design by Metamorphosis Design</a></h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a><h:commandButton id="cBtn1" value="HOME" action="articles"/></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<br/>
+ <h1>FORMULAIRE DE SUPPRESSION</h1>
+<br/>
+		<table align="center">
+		
+<tr>
+<td>Le code: </td>
+<td><h:outputText  value="#{suppArticleBean.dbcode}" /></td>
+</tr>		
+		
+<tr>
+<td>Le code categorie :</td>
+<td><h:outputText value="#{suppArticleBean.dbcodecategorie}" /></td>
+</tr>
+
+<tr>
+<td>Le designation :</td>
+<td><h:outputText value="#{suppArticleBean.dbdesignation}" /></td>
+</tr>
+
+<tr>
+<td>La quantite :</td>
+<td><h:outputText  value="#{suppArticleBean.dbquantite}" /></td>
+</tr>
+
+<tr>
+<td>Le prix unitaire : </td>
+<td><h:outputText  value="#{suppArticleBean.dbprixunitaire}" /></td>
+</tr>
+
+<tr>
+<td>La date :</td>
+<td><h:outputText value="#{suppArticleBean.dbdate}" /></td>
+</tr>
+
+
+<tr>
+<td> </td>
+<td><h:commandButton value="Supprimer" 
+action="#{suppArticleBean.supparticleFinal}"/>
+</td>
+</tr>
+</table>
+	</h:form>
+</h:body>
+
+</f:view>
+     
+</html>

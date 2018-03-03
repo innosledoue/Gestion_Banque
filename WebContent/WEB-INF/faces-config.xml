@@ -6,19 +6,31 @@
     version="2.2">
     
     <navigation-rule>
-		<description>Loging Page</description>
+		<description>De adminLogin à menuadmin</description>
 		<from-view-id>/adminLogin.xhtml</from-view-id>
 		<navigation-case>
 			<from-action>#{loginBean.checkValidUser}</from-action>
 			<from-outcome>menuadministrateur</from-outcome>
 			<to-view-id>/menuadministrateur.xhtml</to-view-id>
 		</navigation-case>
+		
 		<navigation-case>
 			<from-action>#{loginBean.checkValidUser}</from-action>
 			<from-outcome>failure</from-outcome>
 			<to-view-id>/failure.xhtml</to-view-id>
 		</navigation-case>
-
 	</navigation-rule>
+	
+	
+	<navigation-rule>
+		<display-name>index.xhtml</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+			<to-view-id>/adminLogin.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+		
 
 </faces-config>

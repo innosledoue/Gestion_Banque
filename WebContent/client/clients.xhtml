@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+      
+      <f:view>
+<html>
+<head><title> Login Admin</title>
+
+<style>
+	   .nh1{border-style: ridge; border-width: 1ex; text-align: center; width: 50%; border-color: rgb(25,255,50);} 
+  </style>
+
+    <h:outputStylesheet library="bootstrap" name="css/bootstrap.min.css"></h:outputStylesheet>
+
+</head>
+
+
+
+ <h:body>
+<h:form>
+<h1 class="nh1">Menu du client</h1>
+		<p class ="well "><h:graphicImage url="image/client.png" />
+		
+	
+	
+	 <h:commandButton id="cBtn8" value="Ajouter client" action="ajouterClient" />
+	 <h:commandButton id="cBtn9" value="Modifier" action="codeClientAModif" />
+		<h:commandButton id="cBtn10" value="Supprimer" action="codeClientASupp" />
+     <h:commandButton id="cBtn11" value="Rechercher" action="codeClientARech" />
+	 <h:commandButton id="cBtn12" value="Liste clients" action="affichListClient" /></p>
+		
+		<br />
+		<h:commandLink action="/menuadministrateur">
+			<h:graphicImage url="image/export.png" />
+		</h:commandLink>
+		<br />
+
+</h:form>
+ </h:body>
+</html>
+</f:view>
+
+</html>

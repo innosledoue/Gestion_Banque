@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+<h:head>
+	<title>Commandes</title>
+</h:head>
+
+<f:view>
+
+
+<h:body>
+<h2>Passer votre commande</h2> 
+
+<h:form>
+	<table align="center">
+		
+<tr>
+<td>Code du client *: </td><td><h:inputText  value="#{commandeBean.dbcode}" /></td>
+		
+		
+<td>Le Code de l'article *:</td>
+<td><h:inputText value="#{commandeBean.dbcode}" /></td>
+</tr>
+
+<tr>
+<td>Le Code categorie *:</td>
+<td><h:inputText value="#{commandeBean.dbcodecategorie}" /></td>
+
+
+
+<td>La designation *: </td>
+<td><h:inputText  value="#{commandeBean.dbdesignation}" /></td>
+</tr>
+
+<tr>
+<td>La quantite *: </td>
+<td><h:inputText  value="#{commandeBean.dbquantite}" /></td>
+
+
+
+<td>Le montant *:</td>
+<td><h:inputText value="#{commandeBean.dbprixunitaire}" /></td>
+</tr>
+
+
+<tr>
+<td><h:commandButton value="Voir Liste des articles" action="affichListArticle"/></td>
+<td><h:commandButton value="Ajouter" action="#{commandeBean.modifclientFinal }"/></td>
+</tr>
+</table>
+
+ <h2>LA LISTE DES ARTICLES COMMANDES</h2>
+      
+      <h:dataTable value = "#{commandeBean.articles}" var = "c" border="2">
+         
+         
+         <h:column ><f:facet name = "header">CODE</f:facet>
+           <h:outputText value="#{c.code}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">CODE_CATEGORIE</f:facet>
+           <h:outputText value="#{c.codecategorie}"/>
+
+         </h:column>
+     
+         <h:column><f:facet name = "header">DESIGNATION</f:facet>
+            <h:outputText value="#{c.designation}"/>
+
+         </h:column>
+         
+         <h:column><f:facet name = "header">PRIX_UNITAIRE</f:facet>
+                <h:outputText value="#{c.prixunitaire}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">QUANTITE</f:facet>
+           <h:outputText value="#{c.quantite}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">TOTAL_TTC</f:facet>
+                <h:outputText value="#{c.prixunitaire}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">DATE</f:facet>
+               <h:outputText value="#{c.date}"/>
+         </h:column>
+         
+        
+      </h:dataTable>
+      
+      
+    <table>
+		<tr>
+<td>Mode de règlement : </td>
+<td><h:selectOneMenu  value="#{commandeBean.dbdateinscription}">
+       <f:selectItem itemLabel= "Espece" itemValue="espece"/>
+       <f:selectItem itemLabel= "Cheque" itemValue="cheque"/>
+       <f:selectItem itemLabel= "Carte" itemValue="carte"/>
+       </h:selectOneMenu>
+       </td>
+
+<td>
+<h:commandButton value="Valider votre commande" action="affichListArticleCommandeV"/>
+</td>
+</tr>
+
+</table>
+
+
+
+	</h:form>
+</h:body>
+
+</f:view>
+
+
+</html>

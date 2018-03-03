@@ -4,24 +4,436 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
       
-           <f:view>
-     <h:head>
-  <title>menu administrateur</title>
+      
+      <f:view>
+      
+      
+ <h:head>
+  <title>Menu Admin</title>
+  
+  
+  <style>
+    *{
+	margin: 0;
+	padding: 0;
+     }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:link {
+	color: #0041A3;
+}
+
+a:hover, {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:visited {
+	color: #0041A3;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF url(image/bad.gif) repeat-x;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+#main
+{
+background: url(image/headad.jpg) no-repeat;
+width: 982px;
+height: 284px;
+}
+
+#header {
+	width: 778px;
+	height: 284px;
+}
+
+#logo {
+	padding-left: 200px;
+	width: 578px;
+	padding-top: 100px;
+	height: 100px;
+}
+
+#logo h1 {
+	font-size: 28px;
+	font-weight: normal;
+}
+
+#logo h1 a {
+	color: #ffffff;
+}
+
+#logo h2 {
+	margin-top: 5px;
+    font-size: 14px;
+	font-weight: normal;
+}
+
+#logo h2 a {
+	color: #ffffff;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+#metamorph { 
+    font-size: 14px;
+	color: #ffffff;
+}
+#menu {
+	padding-left: 220px;
+	padding-top: 38px;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 90px;
+	height: 30px;
+	margin-left: 1px;
+	padding-top: 15px;
+	/*background: url(image/button.png) no-repeat;*/
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#menu a:hover {
+	height: 34px;
+	margin-top: -3px;
+}
+
+#content
+{
+width: 838px;
+padding: 10px
+}
+
+#left
+{
+	float: left;
+	width: 200px;
+	padding-right: 1em;
+}
+
+
+
+#right
+{
+float: right;
+width: 600px;
+}
+
+#right H4
+{
+	font-size: 12px;
+	color: #0041A3;
+
+}
+
+#right H1
+{
+	font-size: 28px;
+	color: #0041A3;
+	padding-bottom: 10px
+}
+
+#right a
+{
+color: #0041A3;
+text-decoration: none;
+}
+
+#right p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#right h2 {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	color: #0041A3;
+}
+.date {
+	text-align: right;
+	color: #0041A3;
+	font-size: 11px;
+	background-color: #fff;
+}
+
+.date a {
+	color: #0041A3;
+	background-color: #fff;
+}
+
+#right .pic
+{
+float: left;
+margin: 5px;
+}
+
+#right .pic1
+{
+float: right;
+margin: 5px;
+}
+
+#metamorph1 {
+	clear: both;
+	height: 36px;
+	padding: 15px 0;
+	/*background: #000000 url(image/footer.jpg) no-repeat;*/
+	border-top: 5px solid #5592C6;
+	text-align: center;
+}
+
+#metamorph1 p {
+	margin: 0;
+	color: #ffffff;
+	font-size: 10px;
+}
+
+#metamorph1 a {
+	color: #ffffff;
+	font-size: 10px;
+}
+
+#metamorph1 a:hover {
+	color: #FF0000;
+}
+.small p {
+	margin: 0;
+	font-size: 11px;
+}
+.boxed {
+	margin-bottom: 20px;
+}
+
+.boxed .title {
+	height: 33px;
+	width: 207px;
+	padding: 13px 0 0 20px;
+	background: url(image/admi.gif) no-repeat;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.boxed .content2 {
+	padding: 10px;
+    }
+
+#login {
+}
+
+#login form {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login label {
+	font-size: x-small;
+	font-weight: bold;
+}
+
+#login input {
+	margin-bottom: 5px;
+}
+
+#text1, #text2 {
+	width: 150px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
+
+  </style>
+  
 </h:head>
 
+
+
+
 <h:body>
- <h1>le menu pour administrateur</h1>
-   <h:form>
-    <h:commandLink action="clients">
-	<h:graphicImage url="image/client2.jpg"/>
-	</h:commandLink>
+  <h:form>
+  
+  
+     <div id="main">
+<!-- header begins -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#">Math-Info</a></h1>
+		<h2><a href="http://www.metamorphozis.com/" id="metamorph">Design by gal atawan</a></h2>
+	</div>
+	<div id="menu">
+	     <ul>
+	     <li><a><h:commandButton id="cBtn7" value="     HOME     " action="adminLogin" /></a></li>
+	    <li><a><h:commandButton id="cBtn9" value="     CLIENT   " action="client/clients" /></a></li>
+        <li><a><h:commandButton id="cBtn11" value="    ARTICLE   " action="article/articles" /></a></li>
+        <li><a><h:commandButton id="cBtn10" value="   COMMANDE " action="commande/commandes" /></a></li>
+		<li><a><h:commandButton id="cBtn12" value="  PARAMETRE " action="parametre/parametres" /></a></li>
+		<li><a><h:commandButton id="cBtn13" value=" STATISTIQUES " action="statistique/statistiques" /></a></li>
+		</ul>
+	</div>
+</div>
+<!-- header ends -->
+<!-- content begins -->
+<div id="content">
+	<div id="left">
+		<div id="login" class="boxed">
+			<h2 class="title">ADMINISTRATEUR </h2>
+			<div class="content2">
+     
+        <img src="image/animation.gif" />
+     <!--  ID administrateur:<h:inputText id="nomP" value="#{user.nom}"/>  
+		<br />
+		<br />
+     Mot de Passe:<h:inputSecret id="code" value="#{user.password}" maxlength="10" size="12"/>
+
+		<br />
+		<br />
+		<h:commandButton id="cBtnn" value="Soumettre" action="menuadministrateur"/>-->
 		
+			</div>
+		</div>
+		<div id="updates" class="boxed">
+			<h2 class="title">Company News </h2>
+			<div class="content2">
+				<ul>
+					<li>
+						<h3>+information</h3>
+						<p><a> contactez nous au +225 07339472 /+225 02460959</a></p>
+					</li>
+					<li>
+						<h3>web designer</h3>
+						<p><a href="galatawan@gmail.com">Diomande Atawan. &#8230;</a></p>
+					</li>
+					<li>
+						<h3>Administrateur BD</h3>
+						<p><a href="henryjoelkan@yahoo.fr"> Henry Joel. &#8230;</a></p>
+					</li>
+					<li>
+						<h3>Chef de projet</h3>
+						<p><a href="talatagne@yahoo.fr"> Tala Blaise Pascal </a></p>
+					</li>
+					<li>
+						<h3>Concepteur</h3>
+						<p><a href="innocentngoran@gmail.com">N'Goran Konan Innocent &#8230;</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="right">
+		<h1>Wecome to menu admin!</h1>			
+			<p><br />
+
+  <br />
+			      The Metamorphosis Design : 2018 </p>
+			<p class="date"><img src="image/comment.gif" alt="" /> <a href="#">Comments(2)</a> <img src="image/timeicon.gif" alt="" /> 21.02.</p>
+			
+		
+		<!--  	<h:commandLink id="cli" action="clients">
+			<h:graphicImage url="image/client12.png" />
+		    </h:commandLink>
+		     
+		    <h:commandLink id="pan" action="commandes">
+			<h:graphicImage url="image/panier11.png" />
+		    </h:commandLink>
+		    
+		    <h:commandLink id="sta" action="clients">
+			<h:graphicImage url="image/stat11.png" />
+		    </h:commandLink>
+		
+		    <h:commandLink id="par" action="parametre">
+			<h:graphicImage url="image/parametre11.png" />
+		    </h:commandLink>
+		
+		    <h:commandLink id="art" action="articles">
+			<h:graphicImage url="image/articl11.png" />
+		    </h:commandLink>
+		 -->
+		
+					
+					
+		
+				
+	</div>
+                  
+			<p class="date"><img src="image/comment.gif" alt="" /> <a href="#">Comments(2)</a> <img src="image/timeicon.gif" alt="" /> 21.02.</p>
 	
+			
+     </div>
+</div>
+<!-- content begins -->
+<!-- footer begins -->
+
+<div id="metamorph1">
+	<p>Copyright ï¿½ 2009. Designed by <a href="http://www.metamorphozis.com/" title="Flash Templates">Flash Templates</a></p>
+	<p> <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a></p>
+</div>
+<!-- footer ends -->
+
+
  </h:form>
 </h:body>
 
-     
-  </f:view>
+</f:view>
 
-      
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+
+<h:head><title> Recherche de Client</title>
+  <style >
+  #header {
+	width: 778px;
+	height: 284px;
+}
+
+#logo {
+	padding-left: 200px;
+	width: 578px;
+	padding-top: 100px;
+	height: 100px;
+}
+
+#logo h1 {
+	font-size: 28px;
+	font-weight: normal;
+}
+
+#logo h1 a {
+	color: #ffffff;
+}
+
+#logo h2 {
+	margin-top: 5px;
+    font-size: 14px;
+	font-weight: normal;
+}
+
+#logo h2 a {
+	color: #ffffff;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+}
+#main
+{
+background: url(image/headad.jpg) no-repeat;
+width: 982px;
+height: 284px;
+}
+
+
+  #menu {
+	padding-left: 300px;
+	padding-top: 80px;
+        }
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-left: 1px;
+	padding-top: 15px;
+	/*background: url(image/button.png) no-repeat;*/
+	text-align: center;
+	text-decoration: none;
+	color: green;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#menu a:hover {
+	height: 100px;
+	margin-top: -3px;
+}
+
+  </style>
+
+
+</h:head>
+ <h:body>
+   <h:form>
+    <div id="main">
+    <div id="header">
+	<div id="logo">
+		<h1><a href="#">math-info</a></h1>
+		<h2><a href="http://www.metamorphozis.com/" id="metamorph">Design by gal atawan</a></h2>
+	</div>
+  </div>
+ </div>   
+   <h1>  faites votre choix de recherche</h1>
+     <div id="menu">
+		<ul>
+			<li><a><h:commandButton id="cBtn1" value="Rechercher par nom" action="pageARech1" /></a></li>
+			<li><a><h:commandButton id="cBtn2" value=" Rechercher par code " action="pageARech2" /></a></li>
+			</ul>
+	 </div>
+   </h:form>
+ </h:body>
+
+</f:view>
+
+</html>

@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15185204968730" configfile="/jsfprojetvrai/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15185204968730" configfile="/jsfprojetvrai/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="adminLogin.xhtml" comment="De adminLogin à menuadmin" x="72" y="924" id="pf15192383665780" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf15192383665781 pf15192383665782" inlinks="pf15192473003590" path="/adminLogin.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="menuadministrateur.xhtml" x="338" y="946" id="pf15192383665783" referenceLink="//@navigationRule.2/@fromViewId|" inlinks="pf15192383665781" path="/menuadministrateur.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="failure.xhtml" x="348" y="852" id="pf15192383665785" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15192383665782" path="/failure.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="228" y="792" id="pf151924730035911" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15192473003590" path="/index.xhtml"/>
+  <links id="pf15192383665781" target="pf15192383665783" source="pf15192383665780" outcome="menuadministrateur" fromaction="#{loginBean.checkValidUser}"/>
+  <links id="pf15192383665782" target="pf15192383665785" source="pf15192383665780" outcome="failure" fromaction="#{loginBean.checkValidUser}"/>
+  <links id="pf15192473003590" target="pf15192383665780" source="pf151924730035911"/>
+</pageflow:Pageflow>

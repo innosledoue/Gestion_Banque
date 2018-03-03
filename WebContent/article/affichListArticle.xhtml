@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f = "http://java.sun.com/jsf/core"    
+      xmlns:h = "http://java.sun.com/jsf/html">
+   
+     
+   <h:head>
+      <title>Liste Articles</title>
+     
+   </h:head>
+   
+   <h:body>
+   <f:view>
+      <h2>LA LISTE DES ARTICLES</h2>
+      
+      <h:dataTable value = "#{articleBean.articles}" var = "c" border="2">
+         
+         
+         <h:column ><f:facet name = "header">CODE</f:facet>
+           <h:outputText value="#{c.code}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">CODE_CATEGORIE</f:facet>
+           <h:outputText value="#{c.codecategorie}"/>
+
+         </h:column>
+     
+         <h:column><f:facet name = "header">DESIGNATION</f:facet>
+            <h:outputText value="#{c.designation}"/>
+
+         </h:column>
+         
+         <h:column><f:facet name = "header">QUANTITE</f:facet>
+           <h:outputText value="#{c.quantite}"/>
+
+         </h:column>
+         
+         <h:column><f:facet name = "header">PRIX_UNITAIRE</f:facet>
+                <h:outputText value="#{c.prixunitaire}"/>
+         </h:column>
+         
+         <h:column><f:facet name = "header">DATE</f:facet>
+               <h:outputText value="#{c.date}"/>
+         </h:column>
+         
+        
+      </h:dataTable>
+      
+      <p>
+ <h:commandButton value="Passer votre commande"
+ action="affichListArticleCommandeV"/>
+      </p>
+      
+      </f:view>
+   </h:body>
+
+
+</html>
