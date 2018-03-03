@@ -329,6 +329,7 @@ public class ModifClientBean {
 		    	 // msg=  messages.add( "INSERTION REUSSIE");  A REVOIR 
 		  	  return "/modifSucces";                  // pour accéder à une page à un autre emplacement faire: /"nom_page
 		    }
+<<<<<<< HEAD
 		  
 		  
 		  public void dbData1(String userName) {
@@ -382,4 +383,6 @@ public class ModifClientBean {
 		    	 // msg=  messages.add( "INSERTION REUSSIE");  A REVOIR 
 		  	  return "modifierClient";   
 		    }
+=======
+>>>>>>> 709ca029b42067ced7ad17bd48179ff9f3dd00cb
 }
